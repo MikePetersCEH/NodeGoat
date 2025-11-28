@@ -1,0 +1,6 @@
+rules:
+ - id: hardcoded-secret
+ pattern: password = "..."
+ message: Hardcoded password
+ severity: WARNING
+ languages: [python, javascript, java]
