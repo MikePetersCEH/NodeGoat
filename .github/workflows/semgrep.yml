@@ -17,3 +17,4 @@ on:
         config: >-
           p/security-audit
           p/owasp-top-ten
+          ./semgrep/rules
