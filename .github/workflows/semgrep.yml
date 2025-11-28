@@ -5,8 +5,8 @@ on:
   push:
     branches: ["main", "master"]
   
-  jobs:
-    semgrep:
+jobs:
+  semgrep:
     name: Scan
     runs-on: Ubuntu-latest
 
