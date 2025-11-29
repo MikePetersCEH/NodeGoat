@@ -1,6 +1,13 @@
 rules:
  - id: hardcoded-secret
- pattern: password = "..."
- message: Hardcoded password
- severity: WARNING
- languages: [python, javascript, java]
+   pattern: password = "..."
+   message: Hardcoded password
+   severity: WARNING
+   languages: [python, javascript, java]
+
+- id: list-http-request-user-input
+  pattern: HttpRequest.getParameter(...)
+  message: User input source
+  languages: [java]
+  severity: INFO
+  
